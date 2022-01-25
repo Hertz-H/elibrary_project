@@ -1,0 +1,2003 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style_slider.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+  
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<style>
+    :root{
+   --main-blue:#3073d6;
+   --main-green:#1c6824;
+   --main-red:#d40b0e;
+   --secondary-red:#f71108;
+}
+    .img_container i{
+        display: inline-block;
+        width: 100px;
+        height:100px;
+
+    }
+    .img_container i img{
+        width:100%;
+        height:100%;
+    }
+    .show_all{
+        color:blue;
+    }
+   
+    .sec_items_container{
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,110px);
+        gap:43px;
+        padding:20px;
+        justify-content: center;
+        
+       }
+       
+.slide_left,.slide_right{
+    position: absolute;
+    left:0;
+    top:40%;
+    font-size: 1.5rem;
+    height:2rem;
+    line-height: 2rem;
+
+}
+.slide_right{
+    right:0;
+
+}
+ .slide_left i, .slide_right i{
+    color: #80808070;
+    font-weight: 400;
+}
+.sections_container {
+    padding: 40px 5px 20px 0;
+    color: #844438;
+}
+.sections_container .heading {
+padding-left: 60px;
+
+}
+ .sec_items_container .img_sec_con{
+        height:33px;
+        width:33px;
+        border-radius: 50%;
+        background-color:green;
+        margin: auto;
+        margin:10px auto 10px auto;
+    
+       }
+       .sec_items_container .sec_item:first-of-type .img_sec_con{
+           background-color:   #844438;
+       }
+       .sec_items_container .sec_item:first-of-type {
+       
+       color:#844438;
+   }
+       .sec_items_container .sec_item:nth-of-type(2) {
+       
+           color:#f67828;
+       }
+       .sec_items_container .sec_item:nth-of-type(2) .img_sec_con{
+           background-color:   #f67828;
+       }
+       .sec_items_container .sec_item:nth-of-type(3) {
+       
+       color:#76689a;
+   }
+   .sec_items_container .sec_item:nth-of-type(3) .img_sec_con{
+       background-color:   #76689a;
+   }
+   .sec_items_container .sec_item:nth-of-type(4) {
+       
+       color:#cb3278;
+   }
+   .sec_items_container .sec_item:nth-of-type(4) .img_sec_con{
+       background-color:   #cb3278;
+   }
+   .sec_items_container .sec_item:nth-of-type(5) {
+       
+       color:#1b8bbb;
+   }
+   .sec_items_container .sec_item:nth-of-type(5) .img_sec_con{
+       background-color:   #1b8bbb;
+   }
+   .sec_items_container .sec_item:nth-of-type(6) {
+       
+       color:#6db52a;
+   }
+   .sec_items_container .sec_item:nth-of-type(6) .img_sec_con{
+       background-color:   #6db52a;
+   }
+   .sec_items_container .sec_item:nth-of-type(7) {
+       
+       color:#a9093d;
+   }
+   .sec_items_container .sec_item:nth-of-type(7) .img_sec_con{
+       background-color:   #a9093d;
+   }
+    
+    .img_sec_con i{
+
+        color:white;
+        line-height: 33px;
+    }
+     .sec_items_container>.sec_item{
+        
+        text-align: center;
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 7%),0 -3px 3px rgba(0, 0, 0, 7%);
+        border-radius: 5px;
+        height: 90px;
+        font-weight: bold;
+
+       
+       }
+.upper_sec_offer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,267px);
+     gap:13px;
+    justify-content: center;
+
+}
+.upper_img_cont{
+    width:100%;
+    height:100%;
+}
+.lower_sec_offer{
+    height: 100px;
+    width: 95%;
+    margin: auto;
+    margin-top: 13px;
+}
+
+.upper_img_cont img,.lower_sec_offer img{
+    width:100%;
+    height:100%;
+}
+
+
+ .offers_cards_container {
+    position: relative;
+    width: 93%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,173px);
+    gap: 10px;
+    margin: auto;
+    justify-content: center;
+    
+}
+
+.offers_cards_container .slide_left,.offers_cards_container .slide_right{
+    position: absolute;
+    top:140px;
+    left:-20px;
+    font-size: 2rem;
+    height:2rem;
+    line-height: 2rem;
+   
+}
+.offers_cards_container .slide_right{
+    right:-20px;
+}
+.offers_cards_container a{
+    text-decoration: none;
+    color:inherit;
+}
+   
+    .card{
+        position: relative;
+        border: 1px solid lightgrey;
+        border-radius: 10px;
+        height: 320px;
+  
+    }
+    .card .img_container{
+        margin: auto;
+        width:95%;
+        background-color: indianred;
+        height:150px;
+        border-radius: 10px;
+    }
+    .card img{
+        width:100%;
+        height: 100%;
+        
+    }
+    .card_heading{
+        text-align: center;
+        margin-top:10px;
+    }
+    .card_heading i{
+        color: darkred;
+        margin-left:5px;
+
+    }
+    .card_heading .book_name ,.note,.otherformat{
+        color:grey;
+    }
+    .otherformat{
+        font-size: .8rem; 
+        margin-top:3px;
+    }
+    .otherformat span{
+        color:var(--main-blue);
+        font-weight: bold;
+    }
+    .book_name {
+        font-size: .9rem;
+    }
+    .note{
+        font-size: .7rem;
+    }
+    .price_heading{
+        text-align: center;
+        height: 52px;
+    }
+    .price_heading .price{
+        color:red;
+        font-weight: bold;
+    }
+    .price_heading .currency{
+        font-size: .8rem;
+        color:red;
+      
+    }
+    .card_info{
+        display: flex;
+        flex-direction: column;
+        gap:10px
+    }
+    .card_icons_container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+    .card_icons_container span{
+        text-align: center;
+        width:35px;
+        height:35px;
+        line-height: 35px;
+    }
+    .card_icons_container .basket_icon{
+      
+        border-radius: 50%;
+        background-color: darkred;
+        text-align: center;
+        line-height: 35px;
+      
+    }
+    .card_icons_container .basket_icon i{
+        color:white;
+    }
+    .timer_container{
+        position: absolute;
+        top: -3px;;
+        padding:.2rem;
+
+    }
+    .timer_container {
+        text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color:white;
+}
+.timer_container span {
+    
+    background-color: firebrick;
+    display: inline-block;
+    border-radius: 3px;
+    width: 30px;
+    padding: 4px 4px;
+    color: white;
+}
+/* categories SEction*/
+.cate_container{
+    display: flex;
+    gap: 10px;
+     
+}
+    .shoping_cart{
+        position: relative;
+        
+    }
+    .shoping_cart .basktet_items_added{
+        position: absolute;
+        top:-5px;
+        right:-15px;
+        width:20px;
+        height:20px;
+        border-radius: 50%;
+        background-color: brown;
+        color:white;
+        font-size: .5rem;
+        line-height: 20px;
+        text-align: center;
+    }
+    .home_sec_heading{
+     padding: 35px 3% 15px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 95.7%;
+    }
+    .home_show_all{
+        text-align: left;
+       
+    }
+    .home_show_all a{
+        color:var(--main-blue);
+        text-decoration: none;
+        font-size: .8rem;
+    }
+
+@media(max-width:992px){
+    .offers_cards_container{
+        width:100%;
+    }
+    .cate_container {
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+}
+.cat-section{
+    width:400px;
+    align-self: center;
+   
+}
+}
+
+</style>
+<body>
+
+<header>
+    <div class="nav_fixed">
+             <nav>
+               
+                <div class="container">
+                    <div class="upper_header">
+                        <ul class="long_nav list_nav">
+                            <li><a class="sign_inbtn"><i><img src="img/man-user.png" alt=""></i> أدخل لحسابك</a><a class="sign_upbtn"> أو سجل الان </a></li>
+                            <!-- <li><a  id="sign_upbtn"><i><img src="img/man-user.png" alt=""></i>   سجل الان</a> </li> -->
+                            <li><a href=""><i><img src="img/star.png" alt=""></i>الرئيسية</a> </li>
+                            <li><a href=""><i><img src="img/delivery-time.png" alt=""></i>من نحن </a> </li>
+                            <li><a href=""><i><img src="img/contact.png" alt=""></i>اتصل بنا </a></li>
+                            <li><a href=""><i><img src="img/help.png" alt=""></i>المساعدة</a> </li>
+                            <li><a href=""><i><img src="img/location.png" alt=""></i>سياسة الخصوصية</a> </li>
+                            <li><a href=""><i><img src="img/suadia.png" alt=""></i>اليمن </a> <i></i></li>
+                            <li><a href="">English</a><i><img src="img/translation _2.png" alt=""></i> </li>
+                        </ul>  
+                        <div class="lower_header_section">
+                            <div class="burger_menue">
+                                <i class="fas fa-bars">
+                                </i>
+                               
+                            </div>
+                            <div class="search">
+                                <input type="text" placeholder="البحث" id="search_input"><i class="fas fa-search"></i>
+                            </div>
+                            <div class="shoping_cart">
+                                <i class="fas fa-cart-arrow-down"></i> 
+                                <div class="basktet_items_added"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dorp_down_menue">
+                        <ul class="burger_list ">
+                            <li><a class="sign_inbtn"><i><img src="img/man-user.png" alt=""></i> أدخل لحسابك</a><a class="sign_upbtn"> أو سجل الان </a></li>
+                            <!-- <li><a  id="sign_upbtn"><i><img src="img/man-user.png" alt=""></i>   سجل الان</a> </li> -->
+                            <li><a href=""><i><img src="img/star.png" alt=""></i>الرئيسية</a> </li>
+                            <li><a href=""><i><img src="img/delivery-time.png" alt=""></i>من نحن </a> </li>
+                            <li><a href=""><i><img src="img/contact.png" alt=""></i>اتصل بنا </a></li>
+                            <li><a href=""><i><img src="img/help.png" alt=""></i>المساعدة</a> </li>
+                            <li><a href=""><i><img src="img/location.png" alt=""></i>سياسة الخصوصية</a> </li>
+                            <li><a href=""><i><img src="img/suadia.png" alt=""></i>اليمن </a> <i></i></li>
+                            <li><a href="">English</a><i><img src="img/translation _2.png" alt=""></i> </li>
+                        </ul>
+                    </div>
+                </div>
+           
+            </nav>
+        </div> 
+            <div class="container">
+                <div class="lower_header_section search_logo_con">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="">
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="البحث" id="search_input"><i class="fas fa-search"></i>
+                    </div>
+                    <div class="shoping_cart">
+                        <i class="fas fa-cart-arrow-down"></i> 
+                        <div class="basktet_items_added"></div>
+                    </div>
+                </div>
+            </div>
+</header>
+<main>
+<div class="container">
+    <div class="slider_container">
+        <input type="radio" id="inpt_ptr_1" name="images"  checked  />
+        <input type="radio" id="inpt_ptr_2" name="images" />
+        <input type="radio" id="inpt_ptr_3" name="images" />
+        <input type="radio" id="inpt_ptr_4" name="images" />
+        <input type="radio" id="inpt_ptr_5" name="images" />	
+        
+        <div class="img_slides" id="one">			
+              <img src="img/s_2.jpg">
+              
+                 <label class="prev" for="inpt_ptr_5"><span>&#x203a;</span></label>
+                 <label class="next" for="inpt_ptr_2"><span>&#x2039;</span></label>	
+           
+        </div>
+       
+        <div class="img_slides" id="two">
+           
+              <img src="img/s_1.webp " >
+              
+                 <label class="prev" for="inpt_ptr_1"><span>&#x203a;</span></label>
+                 <label class="next" for="inpt_ptr_3"><span>&#x2039;</span></label>
+           
+        </div>
+              
+        <div class="img_slides" id="three">
+              <img src="img/s_3.webp">	
+              
+                 <label class="prev" for="inpt_ptr_2"><span>&#x203a;</span></label>
+                 <label class="next" for="inpt_ptr_4"><span>&#x2039;</span></label>
+        </div>
+     
+        <div class="img_slides" id="four">
+              <img src="img/s_4.jpg">	
+              
+                 <label class="prev" for="inpt_ptr_3"><span>&#x203a;</span></label>
+                 <label class="next" for="inpt_ptr_5"><span>&#x2039;</span></label>
+        </div>
+     
+        <div class="img_slides" id="five">
+              <img src="img/s_5.jpg">	
+              
+                 <label class="prev" for="inpt_ptr_4"><span>&#x203a;</span></label>
+                 <label class="next" for="inpt_ptr_1"><span>&#x2039;</span></label>
+     
+        </div>
+     
+        <div id="nav_slide">
+           <label for="inpt_ptr_1" class="dots" id="dot1"></label>
+           <label for="inpt_ptr_2" class="dots" id="dot2"></label>
+           <label for="inpt_ptr_3" class="dots" id="dot3"></label>
+           <label for="inpt_ptr_4" class="dots" id="dot4"></label>
+           <label for="inpt_ptr_5" class="dots" id="dot5"></label>
+        </div>
+        
+     </div>
+     <section class="sections_container">
+         <div class="heading">
+             <h2>تصفح حسب القسم</h2>
+         </div>
+         <div class="sec_items_container">
+         
+            <div class="sec_item">
+                <div class="img_sec_con">
+                    <i class="fas fa-book "></i> 
+                </div>
+                <p> دين  </p>
+            </div>
+            <div class="sec_item">
+                <div class="img_sec_con">
+                    <i class="fas fa-video "></i> 
+                </div>
+                <p>  تاريخ </p>
+            </div>
+            <div class="sec_item">
+                <div class="img_sec_con">
+                    <i class="fas fa-headset "></i> 
+                </div>
+                <p>  روايات </p>
+            </div>
+            <div class="sec_item">
+                <div class="img_sec_con">
+                    <i class="fas fa-gamepad "></i> 
+                </div>
+                <p> سياسة  </p>
+            </div>
+            <div class="sec_item">
+                <div class="img_sec_con">
+                    <i class="fas fa-book "></i> 
+                </div>
+                <p> اقتصاد  </p>
+            </div>
+            <div class="sec_item">
+                <div class="img_sec_con">
+                    <i class="fas fa-gamepad "></i> 
+                </div>
+                <p> طبخ  </p>
+            </div>
+            <div class="sec_item">
+                <div class="img_sec_con">
+                    <i class="fas fa-film "></i> 
+                </div>
+                <p> التربية  </p>
+            </div>
+            <div class="slide_left"> <i class="fas fa-angle-left"></i></div>
+            <div class="slide_right"><i class="fas fa-angle-right"></i></div>
+         </section>
+         <section class="offers_adds">
+             <div class="upper_sec_offer">
+                 <div class="upper_img_cont">
+                     <img src="img/s_3.webp" alt="">
+                 </div>
+                 <div class="upper_img_cont">
+                    <img src="img/s_4.jpg" alt="">
+                </div>
+                <div class="upper_img_cont">
+                    <img src="img/s_1.webp" alt="">
+                </div>
+                <div class="upper_img_cont">
+                    <img src="img/s_2.jpg" alt="">
+                </div> 
+             </div>
+             <div class="lower_sec_offer">
+                    <img src="assests/img/ad_lower.png" alt="">
+             </div>
+
+         </section>
+     
+  
+    <section class="offers_sections">
+        <div class="home_sec_heading">
+            <h2>العروض الحالية</h2>
+            <div class="home_show_all">
+                <a href=""> عرض الكل</a>
+            </div>
+        </div>
+        <div class="offers_cards_container">
+          <div class="card" >
+                <div class="img_container">
+                    <img src="img/i_1.jpg" alt="">
+                </div>
+             <div class="card_info ">
+                <div class="card_heading">
+                    <i class="fas fa-book-open "></i>
+                    <span>  كتاب إلكتروني</span>
+                    <a href="book_page.html">  <div class=" book_name"> <span class=" book_name_span"> كن أنت </span> <span>(كتاب إلكتروني) </span></div></a>
+                </div>
+                <div class="price_heading">
+                    <span class="price">17.99 </span><span class="currency">ر.س</span>
+                    <div class="note"> شامل الضريبة</div>
+                </div>
+           
+                     <div class="timer_container">
+                         <span id="d"></span> 
+                          <span id="h"></span> 
+                         <span id="m"></span> 
+                      </div>
+                
+                <div class="card_icons_container">
+                         <span><i class="fas fa-cart-arrow-down"></i></span>
+                     <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                     <span>  <i class="fas fa-cart-arrow-down"></i>
+                </div>
+             </div>
+            </div>
+       
+            <div class="card" >
+                <div class="img_container">
+                    <img src="img/i_1.jpg" alt="">
+                </div>
+             <div class="card_info" >
+                <div class="card_heading">
+                    <i class="fas fa-book-open "></i>
+                    <span>  كتاب إلكتروني</span>
+                    <div class=" gud book_name"> <span class=" book_name_span">لاتك الله</span>    <span>(كتاب إلكتروني) </span></div>
+                </div>
+                <div class="price_heading">
+                    <span class="price">17.99 </span><span class="currency">ر.س</span>
+                    <div class="note"> شامل الضريبة</div>
+                </div>
+              
+                    <div class="timer_container">
+                        <span id="d"></span> 
+                         <span id="h"></span> 
+                        <span id="m"></span> 
+                     </div>
+            
+                <div class="card_icons_container">
+                         <span><i class="fas fa-cart-arrow-down"></i></span>
+                     <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                     <span>  <i class="fas fa-cart-arrow-down"></i>
+                </div>
+             </div>
+            </div> 
+            <div class="card" >
+                <div class="img_container">
+                    <img src="img/i_1.jpg" alt="">
+                </div>
+             <div class="card_info" >
+                <div class="card_heading">
+                    <i class="fas fa-book-open "></i>
+                    <span>  كتاب إلكتروني</span>
+                    <div class=" gud book_name"> <span class=" book_name_span">لاتك الله</span>    <span>(كتاب إلكتروني) </span></div>
+                </div>
+                <div class="price_heading">
+                    <span class="price">17.99 </span><span class="currency">ر.س</span>
+                    <div class="note"> شامل الضريبة</div>
+                    <div class="otherformat">
+                        صيغ أخرى: <span>كتاب مطبوع</span>
+                    </div>
+                </div>
+               
+                    <div class="timer_container">
+                        <span id="d"></span> 
+                         <span id="h"></span> 
+                        <span id="m"></span> 
+                     </div>
+              
+                
+              
+                <div class="card_icons_container">
+                         <span><i class="fas fa-cart-arrow-down"></i></span>
+                     <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                     <span>  <i class="fas fa-cart-arrow-down"></i>
+                </div>
+             </div>
+            </div>
+            <div class="card">
+                <div class="img_container">
+                    <img src="img/i_1.jpg" alt="">
+                </div>
+             <div class="card_info">
+                <div class="card_heading">
+                    <i class="fas fa-book-open "></i>
+                    <span>  كتاب إلكتروني</span>
+                    <div class="book_name"> <span class="book_name_span"> كن أنت </span> <span>(كتاب إلكتروني) </span></div>
+                </div>
+                <div class="price_heading">
+                    <span class="price">17.99 </span><span class="currency">ر.س</span>
+                    <div class="note"> شامل الضريبة</div>
+                </div>
+               
+                     <div class="timer_container">
+                         <span id="d"></span> 
+                          <span id="h"></span> 
+                         <span id="m"></span> 
+                 
+           
+    
+                </div>
+                <div class="card_icons_container">
+                         <span><i class="fas fa-cart-arrow-down"></i></span>
+                     <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                     <span>  <i class="fas fa-cart-arrow-down"></i>
+                </div>
+             </div>
+            </div>
+            <div class="card">
+                <div class="img_container">
+                    <img src="img/i_1.jpg" alt="">
+                </div>
+             <div class="card_info">
+                <div class="card_heading">
+                    <i class="fas fa-book-open "></i>
+                    <span>  كتاب إلكتروني</span>
+                    <div class="book_name"> <span class="book_name_span"> كن أنت </span> <span>(كتاب إلكتروني) </span></div>
+                </div>
+                <div class="price_heading">
+                    <span class="price">17.99 </span><span class="currency">ر.س</span>
+                    <div class="note"> شامل الضريبة</div>
+                </div>
+               
+                     <div class="timer_container">
+                         <span id="d"></span> 
+                          <span id="h"></span> 
+                         <span id="m"></span> 
+                 
+                      </div>
+    
+               
+                <div class="card_icons_container">
+                         <span><i class="fas fa-cart-arrow-down"></i></span>
+                     <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                     <span>  <i class="fas fa-cart-arrow-down"></i>
+                </div>
+             </div>
+            </div>
+            <div class="card" >
+                <div class="img_container">
+                    <img src="img/i_1.jpg" alt="">
+                </div>
+             <div class="card_info ">
+                <div class="card_heading">
+                    <i class="fas fa-book-open "></i>
+                    <span>  كتاب إلكتروني</span>
+                    <div class=" book_name"> <span class=" book_name_span"> كن أنت </span> <span>(كتاب إلكتروني) </span></div>
+                </div>
+                <div class="price_heading">
+                    <span class="price">17.99 </span><span class="currency">ر.س</span>
+                    <div class="note"> شامل الضريبة</div>
+                </div>
+                
+                     <div class="timer_container">
+                         <span id="d"></span> 
+                          <span id="h"></span> 
+                         <span id="m"></span> 
+                 
+                     </div>
+    
+               
+                <div class="card_icons_container">
+                         <span><i class="fas fa-cart-arrow-down"></i></span>
+                     <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                     <span>  <i class="fas fa-cart-arrow-down"></i>
+                </div>
+             </div>
+            </div>
+            <div class="slide_left"> <i class="fas fa-angle-left"></i></div>
+            <div class="slide_right"><i class="fas fa-angle-right"></i></div>
+           </div>
+           
+        </section>
+    <section class="offers_sections">
+        <div class="home_sec_heading">
+            <h2> الكتب الدينية</h2>
+            <div class="home_show_all">
+                <a href=""> عرض الكل</a>
+            </div>
+        </div>
+        <div class="offers_cards_container">
+            <div class="card" >
+                <div class="img_container">
+                    <img src="img/i_1.jpg" alt="">
+                </div>
+             <div class="card_info ">
+                <div class="card_heading">
+                    <i class="fas fa-book-open "></i>
+                    <span>  كتاب إلكتروني</span>
+                    <div class=" book_name"> <span class=" book_name_span"> كن أنت </span> <span>(كتاب إلكتروني) </span></div>
+                </div>
+                <div class="price_heading">
+                    <span class="price">17.99 </span><span class="currency">ر.س</span>
+                    <div class="note"> شامل الضريبة</div>
+                </div>
+                <div class="card_icons_container">
+                         <span><i class="fas fa-cart-arrow-down"></i></span>
+                     <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                     <span>  <i class="fas fa-cart-arrow-down"></i>
+                </div>
+             </div>
+            </div>
+    
+             <div class="card">
+                <div class="img_container">
+                    <img src="img/i_1.jpg" alt="">
+                </div>
+             <div class="card_info" >
+                <div class="card_heading" >
+                    <i class="fas fa-book-open "></i>
+                    <span>  كتاب إلكتروني</span>
+                    <div class=" women book_name"> <span class=" book_name_span">النسوية</span>    <span>(كتاب إلكتروني) </span></div>
+                </div>
+                <div class="price_heading">
+                    <span class="price">17.99 </span><span class="currency">ر.س</span>
+                    <div class="note"> شامل الضريبة</div>
+                </div>
+               
+                <div class="card_icons_container">
+                         <span><i class="fas fa-cart-arrow-down"></i></span>
+                     <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                     <span>  <i class="fas fa-cart-arrow-down"></i>
+                </div>
+             </div>
+            </div>
+            <div class="card" >
+                <div class="img_container">
+                    <img src="img/i_1.jpg" alt="">
+                </div>
+             <div class="card_info" >
+                <div class="card_heading">
+                    <i class="fas fa-book-open "></i>
+                    <span>  كتاب إلكتروني</span>
+                    <div class=" gud book_name"> <span class=" book_name_span">لاتك الله</span>    <span>(كتاب إلكتروني) </span></div>
+                </div>
+                <div class="price_heading">
+                    <span class="price">17.99 </span><span class="currency">ر.س</span>
+                    <div class="note"> شامل الضريبة</div>
+                    <div class="otherformat">
+                        صيغ أخرى: <span>كتاب مطبوع</span>
+                    </div>
+                </div>
+                
+              
+                <div class="card_icons_container">
+                         <span><i class="fas fa-cart-arrow-down"></i></span>
+                     <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                     <span>  <i class="fas fa-cart-arrow-down"></i>
+                </div>
+             </div>
+            </div>
+            <div class="card">
+                <div class="img_container">
+                    <img src="img/i_1.jpg" alt="">
+                </div>
+             <div class="card_info">
+                <div class="card_heading">
+                    <i class="fas fa-book-open "></i>
+                    <span>  كتاب إلكتروني</span>
+                    <div class="book_name"> <span class="book_name_span"> كن أنت </span> <span>(كتاب إلكتروني) </span></div>
+                </div>
+                <div class="price_heading">
+                    <span class="price">17.99 </span><span class="currency">ر.س</span>
+                    <div class="note"> شامل الضريبة</div>
+                </div>
+    
+                <div class="card_icons_container">
+                         <span><i class="fas fa-cart-arrow-down"></i></span>
+                     <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                     <span>  <i class="fas fa-cart-arrow-down"></i>
+                </div>
+             </div>
+            </div>
+            <div class="card">
+                <div class="img_container">
+                    <img src="img/i_1.jpg" alt="">
+                </div>
+             <div class="card_info">
+                <div class="card_heading">
+                    <i class="fas fa-book-open "></i>
+                    <span>  كتاب إلكتروني</span>
+                    <div class="book_name"> <span class="book_name_span"> كن أنت </span> <span>(كتاب إلكتروني) </span></div>
+                </div>
+                <div class="price_heading">
+                    <span class="price">17.99 </span><span class="currency">ر.س</span>
+                    <div class="note"> شامل الضريبة</div>
+                </div>
+                
+                <div class="card_icons_container">
+                         <span><i class="fas fa-cart-arrow-down"></i></span>
+                     <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                     <span>  <i class="fas fa-cart-arrow-down"></i>
+                </div>
+             </div>
+            </div>
+            <div class="card" >
+                <div class="img_container">
+                    <img src="img/i_1.jpg" alt="">
+                </div>
+             <div class="card_info ">
+                <div class="card_heading">
+                    <i class="fas fa-book-open "></i>
+                    <span>  كتاب إلكتروني</span>
+                    <div class=" book_name"> <span class=" book_name_span"> كن أنت </span> <span>(كتاب إلكتروني) </span></div>
+                </div>
+                <div class="price_heading">
+                    <span class="price">17.99 </span><span class="currency">ر.س</span>
+                    <div class="note"> شامل الضريبة</div>
+                </div>
+                <div class="card_icons_container">
+                         <span><i class="fas fa-cart-arrow-down"></i></span>
+                     <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                     <span>  <i class="fas fa-cart-arrow-down"></i>
+                </div>
+             </div>
+            </div>
+            <div class="slide_left"> <i class="fas fa-angle-left"></i></div>
+            <div class="slide_right"><i class="fas fa-angle-right"></i></div>
+           </div>
+           
+    </section>
+    <section class="offers_sections">
+        <div class="home_sec_heading">
+            <h2> الكتب التاريخية</h2>
+            <div class="home_show_all">
+                <a href=""> عرض الكل</a>
+            </div>
+        </div>
+        <div class="offers_cards_container">
+            <div class="card" >
+                <div class="img_container">
+                    <img src="img/i_1.jpg" alt="">
+                </div>
+             <div class="card_info ">
+                <div class="card_heading">
+                    <i class="fas fa-book-open "></i>
+                    <span>  كتاب إلكتروني</span>
+                    <div class=" book_name"> <span class=" book_name_span"> كن أنت </span> <span>(كتاب إلكتروني) </span></div>
+                </div>
+                <div class="price_heading">
+                    <span class="price">17.99 </span><span class="currency">ر.س</span>
+                    <div class="note"> شامل الضريبة</div>
+                </div>
+                <div class="card_icons_container">
+                         <span><i class="fas fa-cart-arrow-down"></i></span>
+                     <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                     <span>  <i class="fas fa-cart-arrow-down"></i>
+                </div>
+             </div>
+            </div>
+    
+             <div class="card">
+                <div class="img_container">
+                    <img src="img/i_1.jpg" alt="">
+                </div>
+             <div class="card_info" >
+                <div class="card_heading" >
+                    <i class="fas fa-book-open "></i>
+                    <span>  كتاب إلكتروني</span>
+                    <div class=" women book_name"> <span class=" book_name_span">النسوية</span>    <span>(كتاب إلكتروني) </span></div>
+                </div>
+                <div class="price_heading">
+                    <span class="price">17.99 </span><span class="currency">ر.س</span>
+                    <div class="note"> شامل الضريبة</div>
+                </div>
+               
+                <div class="card_icons_container">
+                         <span><i class="fas fa-cart-arrow-down"></i></span>
+                     <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                     <span>  <i class="fas fa-cart-arrow-down"></i>
+                </div>
+             </div>
+            </div>
+            <div class="card" >
+                <div class="img_container">
+                    <img src="img/i_1.jpg" alt="">
+                </div>
+             <div class="card_info" >
+                <div class="card_heading">
+                    <i class="fas fa-book-open "></i>
+                    <span>  كتاب إلكتروني</span>
+                    <div class=" gud book_name"> <span class=" book_name_span">لاتك الله</span>    <span>(كتاب إلكتروني) </span></div>
+                </div>
+                <div class="price_heading">
+                    <span class="price">17.99 </span><span class="currency">ر.س</span>
+                    <div class="note"> شامل الضريبة</div>
+                    <div class="otherformat">
+                        صيغ أخرى: <span>كتاب مطبوع</span>
+                    </div>
+                </div>
+                
+              
+                <div class="card_icons_container">
+                         <span><i class="fas fa-cart-arrow-down"></i></span>
+                     <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                     <span>  <i class="fas fa-cart-arrow-down"></i>
+                </div>
+             </div>
+            </div>
+            <div class="card">
+                <div class="img_container">
+                    <img src="img/i_1.jpg" alt="">
+                </div>
+             <div class="card_info">
+                <div class="card_heading">
+                    <i class="fas fa-book-open "></i>
+                    <span>  كتاب إلكتروني</span>
+                    <div class="book_name"> <span class="book_name_span"> كن أنت </span> <span>(كتاب إلكتروني) </span></div>
+                </div>
+                <div class="price_heading">
+                    <span class="price">17.99 </span><span class="currency">ر.س</span>
+                    <div class="note"> شامل الضريبة</div>
+                </div>
+            
+                <div class="card_icons_container">
+                         <span><i class="fas fa-cart-arrow-down"></i></span>
+                     <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                     <span>  <i class="fas fa-cart-arrow-down"></i>
+                </div>
+             </div>
+            </div>
+            <div class="card">
+                <div class="img_container">
+                    <img src="img/i_1.jpg" alt="">
+                </div>
+             <div class="card_info">
+                <div class="card_heading">
+                    <i class="fas fa-book-open "></i>
+                    <span>  كتاب إلكتروني</span>
+                    <div class="book_name"> <span class="book_name_span"> كن أنت </span> <span>(كتاب إلكتروني) </span></div>
+                </div>
+                <div class="price_heading">
+                    <span class="price">17.99 </span><span class="currency">ر.س</span>
+                    <div class="note"> شامل الضريبة</div>
+                </div>
+             
+                <div class="card_icons_container">
+                         <span><i class="fas fa-cart-arrow-down"></i></span>
+                     <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                     <span>  <i class="fas fa-cart-arrow-down"></i>
+                </div>
+             </div>
+            </div>
+            <div class="card" >
+                <div class="img_container">
+                    <img src="img/i_1.jpg" alt="">
+                </div>
+             <div class="card_info ">
+                <div class="card_heading">
+                    <i class="fas fa-book-open "></i>
+                    <span>  كتاب إلكتروني</span>
+                    <div class=" book_name"> <span class=" book_name_span"> كن أنت </span> <span>(كتاب إلكتروني) </span></div>
+                </div>
+                <div class="price_heading">
+                    <span class="price">17.99 </span><span class="currency">ر.س</span>
+                    <div class="note"> شامل الضريبة</div>
+                </div>
+              
+                <div class="card_icons_container">
+                         <span><i class="fas fa-cart-arrow-down"></i></span>
+                     <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                     <span>  <i class="fas fa-cart-arrow-down"></i>
+                </div>
+             </div>
+            </div>
+            <div class="slide_left"> <i class="fas fa-angle-left"></i></div>
+            <div class="slide_right"><i class="fas fa-angle-right"></i></div>
+           </div>
+           
+    </section>
+    <section class="offers_sections">
+        <div class="home_sec_heading">
+            <h2> السياسة </h2>
+            <div class="home_show_all">
+                <a href=""> عرض الكل</a>
+            </div>
+        </div>
+        <div class="offers_cards_container">
+            <div class="card" >
+                <div class="img_container">
+                    <img src="img/i_1.jpg" alt="">
+                </div>
+             <div class="card_info ">
+                <div class="card_heading">
+                    <i class="fas fa-book-open "></i>
+                    <span>  كتاب إلكتروني</span>
+                    <div class=" book_name"> <span class=" book_name_span"> كن أنت </span> <span>(كتاب إلكتروني) </span></div>
+                </div>
+                <div class="price_heading">
+                    <span class="price">17.99 </span><span class="currency">ر.س</span>
+                    <div class="note"> شامل الضريبة</div>
+                </div>
+                <div class="card_icons_container">
+                         <span><i class="fas fa-cart-arrow-down"></i></span>
+                     <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                     <span>  <i class="fas fa-cart-arrow-down"></i>
+                </div>
+             </div>
+            </div>
+    
+             <div class="card">
+                <div class="img_container">
+                    <img src="img/i_1.jpg" alt="">
+                </div>
+             <div class="card_info" >
+                <div class="card_heading" >
+                    <i class="fas fa-book-open "></i>
+                    <span>  كتاب إلكتروني</span>
+                    <div class=" women book_name"> <span class=" book_name_span">النسوية</span>    <span>(كتاب إلكتروني) </span></div>
+                </div>
+                <div class="price_heading">
+                    <span class="price">17.99 </span><span class="currency">ر.س</span>
+                    <div class="note"> شامل الضريبة</div>
+                </div>
+                <div class="card_icons_container">
+                         <span><i class="fas fa-cart-arrow-down"></i></span>
+                     <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                     <span>  <i class="fas fa-cart-arrow-down"></i>
+                </div>
+             </div>
+            </div>
+            <div class="card" >
+                <div class="img_container">
+                    <img src="img/i_1.jpg" alt="">
+                </div>
+             <div class="card_info" >
+                <div class="card_heading">
+                    <i class="fas fa-book-open "></i>
+                    <span>  كتاب إلكتروني</span>
+                    <div class=" gud book_name"> <span class=" book_name_span">لاتك الله</span>    <span>(كتاب إلكتروني) </span></div>
+                </div>
+                <div class="price_heading">
+                    <span class="price">17.99 </span><span class="currency">ر.س</span>
+                    <div class="note"> شامل الضريبة</div>
+                    <div class="otherformat">
+                        صيغ أخرى: <span>كتاب مطبوع</span>
+                    </div>
+                </div>
+                
+              
+                <div class="card_icons_container">
+                         <span><i class="fas fa-cart-arrow-down"></i></span>
+                     <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                     <span>  <i class="fas fa-cart-arrow-down"></i>
+                </div>
+             </div>
+            </div>
+            <div class="card">
+                <div class="img_container">
+                    <img src="img/i_1.jpg" alt="">
+                </div>
+             <div class="card_info">
+                <div class="card_heading">
+                    <i class="fas fa-book-open "></i>
+                    <span>  كتاب إلكتروني</span>
+                    <div class="book_name"> <span class="book_name_span"> كن أنت </span> <span>(كتاب إلكتروني) </span></div>
+                </div>
+                <div class="price_heading">
+                    <span class="price">17.99 </span><span class="currency">ر.س</span>
+                    <div class="note"> شامل الضريبة</div>
+                </div>
+              
+                <div class="card_icons_container">
+                         <span><i class="fas fa-cart-arrow-down"></i></span>
+                     <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                     <span>  <i class="fas fa-cart-arrow-down"></i>
+                </div>
+             </div>
+            </div>
+            <div class="card">
+                <div class="img_container">
+                    <img src="img/i_1.jpg" alt="">
+                </div>
+             <div class="card_info">
+                <div class="card_heading">
+                    <i class="fas fa-book-open "></i>
+                    <span>  كتاب إلكتروني</span>
+                    <div class="book_name"> <span class="book_name_span"> كن أنت </span> <span>(كتاب إلكتروني) </span></div>
+                </div>
+                <div class="price_heading">
+                    <span class="price">17.99 </span><span class="currency">ر.س</span>
+                    <div class="note"> شامل الضريبة</div>
+                </div>
+              
+                <div class="card_icons_container">
+                         <span><i class="fas fa-cart-arrow-down"></i></span>
+                     <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                     <span>  <i class="fas fa-cart-arrow-down"></i>
+                </div>
+             </div>
+            </div>
+            <div class="card" >
+                <div class="img_container">
+                    <img src="img/i_1.jpg" alt="">
+                </div>
+             <div class="card_info ">
+                <div class="card_heading">
+                    <i class="fas fa-book-open "></i>
+                    <span>  كتاب إلكتروني</span>
+                    <div class=" book_name"> <span class=" book_name_span"> كن أنت </span> <span>(كتاب إلكتروني) </span></div>
+                </div>
+                <div class="price_heading">
+                    <span class="price">17.99 </span><span class="currency">ر.س</span>
+                    <div class="note"> شامل الضريبة</div>
+                </div>
+            
+                <div class="card_icons_container">
+                         <span><i class="fas fa-cart-arrow-down"></i></span>
+                     <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                     <span>  <i class="fas fa-cart-arrow-down"></i>
+                </div>
+             </div>
+            </div>
+            <div class="slide_left"> <i class="fas fa-angle-left"></i></div>
+            <div class="slide_right"><i class="fas fa-angle-right"></i></div>
+           </div>
+           
+    </section>
+    <section class="offers_sections">
+        <div class="home_sec_heading">
+            <h2> الاقتصاد </h2>
+            <div class="home_show_all">
+                <a href=""> عرض الكل</a>
+            </div>
+        </div>
+        <div class="offers_cards_container">
+            <div class="card" >
+                <div class="img_container">
+                    <img src="img/i_1.jpg" alt="">
+                </div>
+             <div class="card_info ">
+                <div class="card_heading">
+                    <i class="fas fa-book-open "></i>
+                    <span>  كتاب إلكتروني</span>
+                    <div class=" book_name"> <span class=" book_name_span"> كن أنت </span> <span>(كتاب إلكتروني) </span></div>
+                </div>
+                <div class="price_heading">
+                    <span class="price">17.99 </span><span class="currency">ر.س</span>
+                    <div class="note"> شامل الضريبة</div>
+                </div>
+                <div class="card_icons_container">
+                         <span><i class="fas fa-cart-arrow-down"></i></span>
+                     <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                     <span>  <i class="fas fa-cart-arrow-down"></i>
+                </div>
+             </div>
+            </div>
+    
+             <div class="card">
+                <div class="img_container">
+                    <img src="img/i_1.jpg" alt="">
+                </div>
+             <div class="card_info" >
+                <div class="card_heading" >
+                    <i class="fas fa-book-open "></i>
+                    <span>  كتاب إلكتروني</span>
+                    <div class=" women book_name"> <span class=" book_name_span">النسوية</span>    <span>(كتاب إلكتروني) </span></div>
+                </div>
+                <div class="price_heading">
+                    <span class="price">17.99 </span><span class="currency">ر.س</span>
+                    <div class="note"> شامل الضريبة</div>
+                </div>
+                
+                <div class="card_icons_container">
+                         <span><i class="fas fa-cart-arrow-down"></i></span>
+                     <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                     <span>  <i class="fas fa-cart-arrow-down"></i>
+                </div>
+             </div>
+            </div>
+            <div class="card" >
+                <div class="img_container">
+                    <img src="img/i_1.jpg" alt="">
+                </div>
+             <div class="card_info" >
+                <div class="card_heading">
+                    <i class="fas fa-book-open "></i>
+                    <span>  كتاب إلكتروني</span>
+                    <div class=" gud book_name"> <span class=" book_name_span">لاتك الله</span>    <span>(كتاب إلكتروني) </span></div>
+                </div>
+                <div class="price_heading">
+                    <span class="price">17.99 </span><span class="currency">ر.س</span>
+                    <div class="note"> شامل الضريبة</div>
+                    <div class="otherformat">
+                        صيغ أخرى: <span>كتاب مطبوع</span>
+                    </div>
+                </div>
+                
+              
+                <div class="card_icons_container">
+                         <span><i class="fas fa-cart-arrow-down"></i></span>
+                     <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                     <span>  <i class="fas fa-cart-arrow-down"></i>
+                </div>
+             </div>
+            </div>
+            <div class="card">
+                <div class="img_container">
+                    <img src="img/i_1.jpg" alt="">
+                </div>
+             <div class="card_info">
+                <div class="card_heading">
+                    <i class="fas fa-book-open "></i>
+                    <span>  كتاب إلكتروني</span>
+                    <div class="book_name"> <span class="book_name_span"> كن أنت </span> <span>(كتاب إلكتروني) </span></div>
+                </div>
+                <div class="price_heading">
+                    <span class="price">17.99 </span><span class="currency">ر.س</span>
+                    <div class="note"> شامل الضريبة</div>
+                </div>
+               
+                <div class="card_icons_container">
+                         <span><i class="fas fa-cart-arrow-down"></i></span>
+                     <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                     <span>  <i class="fas fa-cart-arrow-down"></i>
+                </div>
+             </div>
+            </div>
+            <div class="card">
+                <div class="img_container">
+                    <img src="img/i_1.jpg" alt="">
+                </div>
+             <div class="card_info">
+                <div class="card_heading">
+                    <i class="fas fa-book-open "></i>
+                    <span>  كتاب إلكتروني</span>
+                    <div class="book_name"> <span class="book_name_span"> كن أنت </span> <span>(كتاب إلكتروني) </span></div>
+                </div>
+                <div class="price_heading">
+                    <span class="price">17.99 </span><span class="currency">ر.س</span>
+                    <div class="note"> شامل الضريبة</div>
+                </div>
+                
+                <div class="card_icons_container">
+                         <span><i class="fas fa-cart-arrow-down"></i></span>
+                     <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                     <span>  <i class="fas fa-cart-arrow-down"></i>
+                </div>
+             </div>
+            </div>
+            <div class="card" >
+                <div class="img_container">
+                    <img src="img/i_1.jpg" alt="">
+                </div>
+             <div class="card_info ">
+                <div class="card_heading">
+                    <i class="fas fa-book-open "></i>
+                    <span>  كتاب إلكتروني</span>
+                    <div class=" book_name"> <span class=" book_name_span"> كن أنت </span> <span>(كتاب إلكتروني) </span></div>
+                </div>
+                <div class="price_heading">
+                    <span class="price">17.99 </span><span class="currency">ر.س</span>
+                    <div class="note"> شامل الضريبة</div>
+                </div>
+              
+                <div class="card_icons_container">
+                         <span><i class="fas fa-cart-arrow-down"></i></span>
+                     <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                     <span>  <i class="fas fa-cart-arrow-down"></i>
+                </div>
+             </div>
+            </div>
+            <div class="slide_left"> <i class="fas fa-angle-left"></i></div>
+            <div class="slide_right"><i class="fas fa-angle-right"></i></div>
+           </div>
+           
+    </section>
+    <section class="offers_sections">
+        <div class="home_sec_heading">
+            <h2> الطبخ </h2>
+            <div class="home_show_all">
+                <a href=""> عرض الكل</a>
+            </div>
+        </div>
+        <div class="offers_cards_container">
+            <div class="card" >
+                <div class="img_container">
+                    <img src="img/i_1.jpg" alt="">
+                </div>
+             <div class="card_info ">
+                <div class="card_heading">
+                    <i class="fas fa-book-open "></i>
+                    <span>  كتاب إلكتروني</span>
+                    <div class=" book_name"> <span class=" book_name_span"> كن أنت </span> <span>(كتاب إلكتروني) </span></div>
+                </div>
+                <div class="price_heading">
+                    <span class="price">17.99 </span><span class="currency">ر.س</span>
+                    <div class="note"> شامل الضريبة</div>
+                </div>
+                <div class="card_icons_container">
+                         <span><i class="fas fa-cart-arrow-down"></i></span>
+                     <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                     <span>  <i class="fas fa-cart-arrow-down"></i>
+                </div>
+             </div>
+            </div>
+    
+             <div class="card">
+                <div class="img_container">
+                    <img src="img/i_1.jpg" alt="">
+                </div>
+             <div class="card_info" >
+                <div class="card_heading" >
+                    <i class="fas fa-book-open "></i>
+                    <span>  كتاب إلكتروني</span>
+                    <div class=" women book_name"> <span class=" book_name_span">النسوية</span>    <span>(كتاب إلكتروني) </span></div>
+                </div>
+                <div class="price_heading">
+                    <span class="price">17.99 </span><span class="currency">ر.س</span>
+                    <div class="note"> شامل الضريبة</div>
+                </div>
+        
+                <div class="card_icons_container">
+                         <span><i class="fas fa-cart-arrow-down"></i></span>
+                     <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                     <span>  <i class="fas fa-cart-arrow-down"></i>
+                </div>
+             </div>
+            </div>
+            <div class="card" >
+                <div class="img_container">
+                    <img src="img/i_1.jpg" alt="">
+                </div>
+             <div class="card_info" >
+                <div class="card_heading">
+                    <i class="fas fa-book-open "></i>
+                    <span>  كتاب إلكتروني</span>
+                    <div class=" gud book_name"> <span class=" book_name_span">لاتك الله</span>    <span>(كتاب إلكتروني) </span></div>
+                </div>
+                <div class="price_heading">
+                    <span class="price">17.99 </span><span class="currency">ر.س</span>
+                    <div class="note"> شامل الضريبة</div>
+                    <div class="otherformat">
+                        صيغ أخرى: <span>كتاب مطبوع</span>
+                    </div>
+                </div>
+                
+              
+                <div class="card_icons_container">
+                         <span><i class="fas fa-cart-arrow-down"></i></span>
+                     <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                     <span>  <i class="fas fa-cart-arrow-down"></i>
+                </div>
+             </div>
+            </div>
+            <div class="card">
+                <div class="img_container">
+                    <img src="img/i_1.jpg" alt="">
+                </div>
+             <div class="card_info">
+                <div class="card_heading">
+                    <i class="fas fa-book-open "></i>
+                    <span>  كتاب إلكتروني</span>
+                    <div class="book_name"> <span class="book_name_span"> كن أنت </span> <span>(كتاب إلكتروني) </span></div>
+                </div>
+                <div class="price_heading">
+                    <span class="price">17.99 </span><span class="currency">ر.س</span>
+                    <div class="note"> شامل الضريبة</div>
+                </div>
+              
+                <div class="card_icons_container">
+                         <span><i class="fas fa-cart-arrow-down"></i></span>
+                     <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                     <span>  <i class="fas fa-cart-arrow-down"></i>
+                </div>
+             </div>
+            </div>
+            <div class="card">
+                <div class="img_container">
+                    <img src="img/i_1.jpg" alt="">
+                </div>
+             <div class="card_info">
+                <div class="card_heading">
+                    <i class="fas fa-book-open "></i>
+                    <span>  كتاب إلكتروني</span>
+                    <div class="book_name"> <span class="book_name_span"> كن أنت </span> <span>(كتاب إلكتروني) </span></div>
+                </div>
+                <div class="price_heading">
+                    <span class="price">17.99 </span><span class="currency">ر.س</span>
+                    <div class="note"> شامل الضريبة</div>
+                </div>
+             
+                <div class="card_icons_container">
+                         <span><i class="fas fa-cart-arrow-down"></i></span>
+                     <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                     <span>  <i class="fas fa-cart-arrow-down"></i>
+                </div>
+             </div>
+            </div>
+            <div class="card" >
+                <div class="img_container">
+                    <img src="img/i_1.jpg" alt="">
+                </div>
+             <div class="card_info ">
+                <div class="card_heading">
+                    <i class="fas fa-book-open "></i>
+                    <span>  كتاب إلكتروني</span>
+                    <div class=" book_name"> <span class=" book_name_span"> كن أنت </span> <span>(كتاب إلكتروني) </span></div>
+                </div>
+                <div class="price_heading">
+                    <span class="price">17.99 </span><span class="currency">ر.س</span>
+                    <div class="note"> شامل الضريبة</div>
+                </div>
+              
+                <div class="card_icons_container">
+                         <span><i class="fas fa-cart-arrow-down"></i></span>
+                     <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                     <span>  <i class="fas fa-cart-arrow-down"></i>
+                </div>
+             </div>
+            </div>
+            <div class="slide_left"> <i class="fas fa-angle-left"></i></div>
+            <div class="slide_right"><i class="fas fa-angle-right"></i></div>
+           </div>
+           
+    </section>
+    <section class="offers_sections">
+        <div class="home_sec_heading">
+            <h2> أفضل الروايات الرومانسية </h2>
+            <div class="home_show_all">
+                <a href=""> عرض الكل</a>
+            </div>
+        </div>
+        <div class="offers_cards_container">
+            <div class="card" >
+                <div class="img_container">
+                    <img src="img/i_1.jpg" alt="">
+                </div>
+             <div class="card_info ">
+                <div class="card_heading">
+                    <i class="fas fa-book-open "></i>
+                    <span>  كتاب إلكتروني</span>
+                    <div class=" book_name"> <span class=" book_name_span"> كن أنت </span> <span>(كتاب إلكتروني) </span></div>
+                </div>
+                <div class="price_heading">
+                    <span class="price">17.99 </span><span class="currency">ر.س</span>
+                    <div class="note"> شامل الضريبة</div>
+                </div>
+                <div class="card_icons_container">
+                         <span><i class="fas fa-cart-arrow-down"></i></span>
+                     <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                     <span>  <i class="fas fa-cart-arrow-down"></i>
+                </div>
+             </div>
+            </div>
+    
+             <div class="card">
+                <div class="img_container">
+                    <img src="img/i_1.jpg" alt="">
+                </div>
+             <div class="card_info" >
+                <div class="card_heading" >
+                    <i class="fas fa-book-open "></i>
+                    <span>  كتاب إلكتروني</span>
+                    <div class=" women book_name"> <span class=" book_name_span">النسوية</span>    <span>(كتاب إلكتروني) </span></div>
+                </div>
+                <div class="price_heading">
+                    <span class="price">17.99 </span><span class="currency">ر.س</span>
+                    <div class="note"> شامل الضريبة</div>
+                </div>
+
+                <div class="card_icons_container">
+                         <span><i class="fas fa-cart-arrow-down"></i></span>
+                     <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                     <span>  <i class="fas fa-cart-arrow-down"></i>
+                </div>
+             </div>
+            </div>
+            <div class="card" >
+                <div class="img_container">
+                    <img src="img/i_1.jpg" alt="">
+                </div>
+             <div class="card_info" >
+                <div class="card_heading">
+                    <i class="fas fa-book-open "></i>
+                    <span>  كتاب إلكتروني</span>
+                    <div class=" gud book_name"> <span class=" book_name_span">لاتك الله</span>    <span>(كتاب إلكتروني) </span></div>
+                </div>
+                <div class="price_heading">
+                    <span class="price">17.99 </span><span class="currency">ر.س</span>
+                    <div class="note"> شامل الضريبة</div>
+                    <div class="otherformat">
+                        صيغ أخرى: <span>كتاب مطبوع</span>
+                    </div>
+                </div>
+                
+              
+                <div class="card_icons_container">
+                         <span><i class="fas fa-cart-arrow-down"></i></span>
+                     <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                     <span>  <i class="fas fa-cart-arrow-down"></i>
+                </div>
+             </div>
+            </div>
+            <div class="card">
+                <div class="img_container">
+                    <img src="img/i_1.jpg" alt="">
+                </div>
+             <div class="card_info">
+                <div class="card_heading">
+                    <i class="fas fa-book-open "></i>
+                    <span>  كتاب إلكتروني</span>
+                    <div class="book_name"> <span class="book_name_span"> كن أنت </span> <span>(كتاب إلكتروني) </span></div>
+                </div>
+                <div class="price_heading">
+                    <span class="price">17.99 </span><span class="currency">ر.س</span>
+                    <div class="note"> شامل الضريبة</div>
+                </div>
+                <div class="card_icons_container">
+                         <span><i class="fas fa-cart-arrow-down"></i></span>
+                     <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                     <span>  <i class="fas fa-cart-arrow-down"></i>
+                </div>
+             </div>
+            </div>
+            <div class="card">
+                <div class="img_container">
+                    <img src="img/i_1.jpg" alt="">
+                </div>
+             <div class="card_info">
+                <div class="card_heading">
+                    <i class="fas fa-book-open "></i>
+                    <span>  كتاب إلكتروني</span>
+                    <div class="book_name"> <span class="book_name_span"> كن أنت </span> <span>(كتاب إلكتروني) </span></div>
+                </div>
+                <div class="price_heading">
+                    <span class="price">17.99 </span><span class="currency">ر.س</span>
+                    <div class="note"> شامل الضريبة</div>
+                </div>
+                <div class="card_icons_container">
+                         <span><i class="fas fa-cart-arrow-down"></i></span>
+                     <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                     <span>  <i class="fas fa-cart-arrow-down"></i>
+                </div>
+             </div>
+            </div>
+            <div class="card" >
+                <div class="img_container">
+                    <img src="img/i_1.jpg" alt="">
+                </div>
+             <div class="card_info ">
+                <div class="card_heading">
+                    <i class="fas fa-book-open "></i>
+                    <span>  كتاب إلكتروني</span>
+                    <div class=" book_name"> <span class=" book_name_span"> كن أنت </span> <span>(كتاب إلكتروني) </span></div>
+                </div>
+                <div class="price_heading">
+                    <span class="price">17.99 </span><span class="currency">ر.س</span>
+                    <div class="note"> شامل الضريبة</div>
+                </div>
+                <div class="card_icons_container">
+                         <span><i class="fas fa-cart-arrow-down"></i></span>
+                     <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                     <span>  <i class="fas fa-cart-arrow-down"></i>
+                </div>
+             </div>
+            </div>
+            <div class="slide_left"> <i class="fas fa-angle-left"></i></div>
+            <div class="slide_right"><i class="fas fa-angle-right"></i></div>
+           </div>
+           
+    </section>
+     
+    </div>
+
+ <!-- sign in -->
+ 
+<div class="overly">
+    <div class="signin">
+        <div class=" form_container_signin">
+            <i  class="close_signin"> <img src="img/close_icon.svg" alt=""></i>
+           <div class="sign_header">
+               <h3>تسجيل الدخول</h3>
+           </div>
+           <hr>
+           
+            <!--signin -->
+              <!--  -->
+            <form action="">
+    
+            <div class="input_containtr"><input type="text">
+                <span class="input_title">البريد الالكتروني</span>
+            </div>
+          
+            <div class="input_containtr"><input type="text">
+                <span class="input_title">كلمة السر</span>
+                <span class="forget">نسيت؟</span>
+            </div>
+            
+            <div class="input_containtr log_in"><button> تسجيل دخول</button></div>
+                                                        
+            
+       </form>
+       <div class="form_footer">
+           <span>لديك حساب؟ </span>
+           <a href="sign_up.html"><button class="creat_account">  إنشاء حساب جديد</button></a>
+       </div>
+              
+     </div>
+    </div>
+ 
+</div>
+
+
+<!-- sign up -->
+<div class="overly">
+    <div class="signup">
+
+        <div class=" form_container">
+
+        <div class="sign_header">
+            <i  class="close_signup"> <img src="img/close_icon.svg" alt=""></i>
+            <h3>انشاء حساب</h3>
+            
+        </div>
+        <hr>
+        
+            <!-- sign_up -->
+            <!--  -->
+            <form action="">
+            <div class="number_container">
+                <div class="input_containtr"><input type="text" placeholder="رقم الجوال"></div>
+                <div class="input_containtr">
+                    <span>رمز البلد</span>
+                    <select name="contry_key">
+                        <option value="967">+967</option>
+                        <div><option value="+970" selected>+970<i><img src="" alt=""></i></option></div>
+                        <option value=""></option>
+                    </select>
+                    <i><img src="img/suadia.png" alt=""></i>
+                </div>
+            </div>
+            <div class="valid_notes">سوف نرسل  لك<span> رمز  التحقق عن طريق رسالة نصية</span>  </div>
+                
+                    <div class="input_containtr  input_darker"><input type="text" >
+                    <span class="span_valid_num">ارسال رمز التحقق </span></div>
+                <div class="input_containtr"><input type="text">
+                    <span class="input_title">الاسم الأول</span></div>
+                
+                <div class="input_containtr"><input type="text">
+                    <span class="input_title">اسم العائلة</span>
+                </div>
+                <div class="input_containtr"><input type="text">
+                    <span class="input_title">البريد الالكتروني</span>
+                </div>
+                <div class="input_containtr"><input type="text">
+                    <span class="input_title"> تأكيد البريد الالكتروني</span>
+                </div>
+                <div class="input_containtr"><input type="text">
+                    <span class="input_title">كلمة السر</span>
+                </div>
+                <div class="checkbox_container">
+                    <input type="checkbox" name="policy" value="agree"checked>   أوافق على <span>على الشروط والأحكام</span>  <br>
+                    <input type="checkbox" name="subscribe" value="yes" checked> التسجيل للانضمام للبشرة البردية<br>
+                </div>
+                
+                 <button class="btn"> إنشاء حساب</button>
+                                                            
+                <div class="form_footer">
+                    <span>لديك حساب؟ </span><a href="login.html">تسجيل الدخول &lt;</a>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+</div>
+
+
+</main>
+
+<footer>
+   
+        <div class="upper_footer">
+          <div class="container">
+            <div class="subscribe_srv_abt_container">
+                <div class="subscribe_social_container">
+        
+                        <h5 class="footer_heading">انضم الى نشرتنا البريدية</h5>
+                        <div class="emial_cont">
+                            <div class="input_cont"> <input type="email" placeholder="ادخل بريدك الالكتروني"> <i class="fas fa-lock"></i></div>
+                            
+                            <button class="btn">اشتراك</button>
+                        </div> 
+                  
+                </div>
+            
+        
+                <div class="custmer_srv_container">
+                    <div class="custmer_srv_container">
+                        <h5 class="footer_heading">انضم الى نشرتنا البريدية</h5>
+                            <p>مبيعات الشركات</p>
+                            <p>الاسئلة المتكررة</p>
+                            <p>مبيعات الشركات</p>
+                            <p>الاسئلة المتكررة</p>
+                            <p>الاسئلة المتكررة</p>
+                            <p>الاسئلة المتكررة</p>
+                            <p>الاسئلة المتكررة</p>
+                            <p>الاسئلة المتكررة</p>
+
+                    </div> 
+                </div>
+                <div class="custmer_srv_container">
+                    <div class="custmer_srv_container">
+                        <h5 class="footer_heading">انضم الى نشرتنا البريدية</h5>
+                            <p>مبيعات الشركات</p>
+                            <p>الاسئلة المتكررة</p>
+                            <p>مبيعات الشركات</p>
+                            <p>الاسئلة المتكررة</p>
+                            <p>الاسئلة المتكررة</p>
+                            <p>الاسئلة المتكررة</p>
+                            <p>الاسئلة المتكررة</p>
+                            <p>الاسئلة المتكررة</p>
+
+                    </div> 
+                </div>
+                <div class="custmer_srv_container">
+                    <div class="custmer_srv_container">
+                        <h5 class="footer_heading">انضم الى نشرتنا البريدية</h5>
+                            <p>مبيعات الشركات</p>
+                            <p>الاسئلة المتكررة</p>
+                            <p>مبيعات الشركات</p>
+                            <p>الاسئلة المتكررة</p>
+                            <p>الاسئلة المتكررة</p>
+                            <p>الاسئلة المتكررة</p>
+                            <p>الاسئلة المتكررة</p>
+                            <p>الاسئلة المتكررة</p>
+
+                    </div> 
+                </div>
+                <div class="custmer_srv_container">
+                    <div class="custmer_srv_container">
+                        <h5 class="footer_heading">انضم الى نشرتنا البريدية</h5>
+                            <p>مبيعات الشركات</p>
+                            <p>الاسئلة المتكررة</p>
+                            <p>مبيعات الشركات</p>
+                            <p>الاسئلة المتكررة</p>
+                            <p>الاسئلة المتكررة</p>
+                            <p>الاسئلة المتكررة</p>
+                            <p>الاسئلة المتكررة</p>
+                            <p>الاسئلة المتكررة</p>
+                        <h5 class="footer_heading">انضم الى نشرتنا البريدية</h5>
+                    </div> 
+                </div>
+            </div>
+             <div class="subscribe_srv_abt_container">
+                    <div class="social_links_contianer">
+                        <h5 class="footer_heading">تواصل معنا</h5>
+                        <ul>
+                            <li><a href=""><i><img src="img/face.png" alt=""></i></a></li>
+                            <li><a href=""><i> <img src="img/twitter.png" alt=""></i></a></li>
+                            <li><a href=""><i> <img src="img/youtube.png" alt=""></i></a></li>
+                            <li><a href=""><i> <img src="img/insta.png" alt=""></i></a></li>
+                            <li><a href=""><i> <img src="img/linkedin.png" alt=""></i></a></li>
+                            <li><a href=""><i> <img src="img/snap.png" alt=""></i></a></li>
+                            <li><a href=""><i> <img src="img/snap.png" alt=""></i></a></li>
+                           
+
+                        </ul> 
+                    </div>
+            </div>
+         
+        </div>
+    </div>
+   
+        <div class="lower_footer_container">
+            <div class="container">
+            <div class="lower_footer">
+            <div class="footer_img_container">
+                <div>  <img src="img/Amazon.jpg" alt=""></div>
+                <div><img src="img/MasterCard.svg" alt=""> </div>
+                <div><img src="img/visa_1.png" alt=""> </div>
+             
+                <div><img src="img/mada.svg" alt=""> </div>
+                <div> <img src="img/qitaf_logo.png" alt=""> </div>
+                <div><img src="img/visa_1.png" alt="">  </div>
+
+            </div>
+            
+            <div class="footer_copyright_container">
+                <div> <span> سياسة الخصوصية</span> 
+                        <div class="sperator"></div>
+                        <span> شروط الخدمة </span>
+                </div>
+                <div>  .جميع الحقوق محفوظة لمكتبة جرير  &copy 2015. س.ت. 1010032264. اونلاين س.ت. 1010654213</div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</footer>
+<script>
+        var burger_menue=document.querySelector(".burger_menue");
+        var dorp_down_menue=document.querySelector(".dorp_down_menue");
+        burger_menue.onclick=function(){
+            dorp_down_menue.classList.toggle("show_burger_menue");
+        }
+    var search_input=document.getElementById("search_input");
+    var cards=document.querySelectorAll(".card");
+    var book=document.querySelectorAll(".book_name_span");
+    search_input.onkeyup=function(){
+        if(search_input.value!=""){
+     for(let i=0;i < book.length;i++)
+     if(book[i].innerHTML.toUpperCase().indexOf(search_input.value.toUpperCase())==-1){
+         console.log( book[i].innerHTML);
+        cards[i].style.display="none" ;
+    }
+    else{
+        cards[i].style.display="block";
+    }
+}
+}
+
+    var basktet_items_added =document.querySelectorAll(".basktet_items_added");
+
+    var basket_icon =document.querySelectorAll(".basket_icon");
+    console.log(typeof(basket_icon));
+   var basktet_items=0;
+   if(localStorage.getItem("m")==null){
+            basktet_items_added[0].innerHTML= "0";
+            basktet_items_added[1].innerHTML= "1";
+       
+       }
+       else{
+        basktet_items_added[0].innerHTML= basktet_items_added.innerHTML= localStorage.getItem("m");
+        basktet_items_added[1].innerHTML= basktet_items_added.innerHTML= localStorage.getItem("m");
+       }
+
+       basket_icon.forEach(icon => {
+        icon.onclick=function(){
+     
+     if(localStorage.getItem("m")==null){
+         basktet_items=1;
+         localStorage.setItem("m",1);
+         basktet_items_added[0].innerHTML= "1";
+         basktet_items_added[1].innerHTML= "1";
+    
+    }
+    else{
+     basktet_items= localStorage.getItem("m");
+     basktet_items++;
+     localStorage.setItem("m",basktet_items);
+     basktet_items_added[0].innerHTML= localStorage.getItem("m");
+     basktet_items_added[1].innerHTML=localStorage.getItem("m");
+
+    }
+     
+
+ }
+ 
+       });
+  
+
+    var close_signin =document.querySelector(".close_signin");
+    var close_signup =document.querySelector(".close_signup");
+    var overly=document.querySelectorAll(".overly");
+    var sign_upbtn=document.querySelectorAll(".sign_upbtn");//document.getElementById("sign_upbtn")
+    var sign_up=document.querySelector(".signup");
+    var sign_in=document.querySelector(".signin");
+    var sign_inbtn=document.querySelectorAll(".sign_inbtn");
+
+  for(let i=0;i<sign_inbtn.length;i++){
+    sign_inbtn[i].onclick=function(){
+     overly[0].style.visibility="visible";
+    }
+}
+close_signin.onclick=function(){
+       console.log("hello");
+        overly[0].style.visibility="hidden";
+    
+      }    
+console.log();
+console.log("close  "+sign_upbtn);
+for(let i=0;i<sign_upbtn.length;i++){
+    sign_upbtn[i].onclick=function(){
+     overly[1].style.visibility="visible";
+    }
+}
+
+
+//  sign_upbtn.onclick=function(){
+//         overly[1].style.visibility="visible";
+//      }
+
+close_signup.onclick=function(){
+       console.log("hello");
+        overly[1].style.visibility="hidden";
+    
+      }
+ function counter(){
+        var end_date=new Date('jan 29,2022 00:00:00').getTime();
+        var current_date=new Date().getTime();
+        var remain_time= end_date - current_date;
+        var seconds=1000;
+        var mins= 60 * seconds;
+        var hours= 60 * mins;
+        var days= 24 * hours;
+
+        var remain_days= Math.floor(remain_time/days);
+        var remain_hours= Math.floor((remain_time%days)/hours);
+        var remain_mins= Math.floor((remain_time%hours)/mins);
+        var remain_seconds= Math.floor((remain_time%mins)/seconds);
+        
+        var remain_days_span=document.querySelectorAll("#d");
+        // remain_days_span.innerHTML=remain_days;
+        var remain_hours_span=document.querySelectorAll("#h");
+        // remain_hours_span.innerHTML=remain_hours;
+        var remain_mins_span=document.querySelectorAll("#m");
+        // remain_mins_span.innerHTML=remain_mins;
+        // var remain_seconds_span=document.querySelectorAll("#s");
+        // remain_seconds_span.innerHTML=remain_seconds;
+      for(let i=0;i<remain_days_span.length;i++){
+        remain_days_span[i].innerHTML=remain_days;
+        remain_hours_span[i].innerHTML=remain_hours;
+        remain_mins_span[i].innerHTML=remain_mins;
+
+       }
+       
+
+        
+
+
+    }
+    // setInterval(counter,6000000);
+
+</script>
+   
+</body>
+
+</html>
